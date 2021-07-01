@@ -6,7 +6,6 @@ export interface UserDocument extends Document {
   firstName: string
   lastName: string
   email: string
-  age: number
   password: string
   isAdmin: boolean
 }
@@ -25,9 +24,6 @@ const UserModel = new Schema(
       type: String,
       required: true,
       unique: true,
-    },
-    age: {
-      type: Number,
     },
     password: {
       type: String,
