@@ -5,8 +5,7 @@ content-type: application/json
     "firstName": "Sergio",
     "lastName": "Giron",
     "email": "isadmin@hola.com",
-    "age": 30,
-    "password": "hellowor",
+    "password": "123456",
     "isAdmin": true
 }
 ###
@@ -44,13 +43,13 @@ Authorization:
 
 ###
 
-GET http://localhost:3000/api/v1/users/60c372cfc6aeef34ff246ed1 HTTP/1.1
+GET http://localhost:3000/api/v1/users/60db1b1fe471e7278d240566 HTTP/1.1
 content-type: application/json
 
 
 ###
 
-DELETE http://localhost:3000/api/v1/garmets/60a52618a2e17367699063de HTTP/1.1
+DELETE http://localhost:3000/api/v1/users/60db1b1fe471e7278d240566 HTTP/1.1
 content-type: application/json
 
 ###

@@ -2,6 +2,7 @@ import express from 'express'
 import compression from 'compression'
 import lusca from 'lusca'
 import dotenv from 'dotenv'
+import cors from 'cors'
 
 import cartRouter from './routers/cart'
 import garmetRouter from './routers/garmet'
@@ -14,6 +15,7 @@ const app = express()
 // Express configuration
 app.set('port', process.env.PORT || 3000)
 
+app.use(cors())
 // Use common 3rd-party middlewares
 app.use(compression())
 app.use(express.json())
